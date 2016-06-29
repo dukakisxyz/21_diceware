@@ -34,7 +34,7 @@ def make_password():
 	return (dice_pass)
 
 
-"""
+'''
 @app.route('/manifest')
 def manifest():
     """Provide the app manifest to the 21 crawler.
@@ -42,7 +42,7 @@ def manifest():
     with open('./manifest.yaml', 'r') as f:
         manifest = yaml.load(f)
     return json.dumps(manifest)
-"""
+'''
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
