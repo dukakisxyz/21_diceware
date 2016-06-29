@@ -9,16 +9,9 @@ import json
 app = flask.Flask(__name__)
 payment = Payment(app, Wallet())
 
-
-
 dice_pass = {
 	"password" : []
 }
-
-@app.route('/make_password')
-@payment.required(5000)
-
-length = request.args.get('text')
 
 def make_word():
 	word_in_numbers = ""
@@ -29,7 +22,11 @@ def make_word():
 	word = dictionary[word_in_numbers]
 	return (word)
 
-def make_password(length):
+
+@app.route('/make_password')
+@payment.required(5000)
+def make_password():
+	length = request.args.get('text')
 	password = ""
 	for x in range(length):
 		word = make_word()
