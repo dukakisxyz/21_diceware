@@ -1,6 +1,7 @@
 #secure & memorable passwords for everyone
 
 import flask
+from flask import request
 from two1.wallet import Wallet
 from two1.bitserv.flask import Payment
 import yaml
