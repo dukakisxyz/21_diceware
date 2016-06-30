@@ -1,9 +1,6 @@
 info:
   title: 'Diceware password generator'
-  description: 'Generates secure, memorable password suggestions for your apps or services, in exchange for bitcoin. To purchase a diceware password run: "21 buy url http://10.244.192.155:5000/make_password" and you will receive a json string of 5 (default) random generated words. To spesify the password length, add the desirable number of words as an integer at the end of the url, for example: " 21 buy url http://10.244.192.155:5000/make_password/11 ". The maximum password length allowed is 16 words.
-  ## TODO: Replace this IP address with your 21 address
-  ##       You can get your IP address by running the following command
-  ## python3 -c 'from two1.commands.util import zerot#ier; print(zerotier.get_address("21market"))'
+  description: 'Generates secure, memorable password suggestions for your apps or services, in exchange for bitcoin. To purchase a diceware password run: "21 buy url http://10.244.192.155:5000/make_password" and you will receive a json string of 5 (default) random generated words. To spesify the password length, add the desirable number of words as an integer at the end of the url, for example: " 21 buy url http://10.244.192.155:5000/make_password/11 ". The maximum password length allowed is 16 words.'
   x-21-quick-buy: '21 buy url http://10.244.192.155:5000/make_password/5'
   x-21-category: utilities
   x-21-app-image: "https://cdn.filepicker.io/api/file/x6J1kiKyT9WhjmbqBrAb"
@@ -11,12 +8,8 @@ info:
     min: 1000
     max: 1000
   contact:
-    ## TODO: Replace this information with your own
     name: erres
     email: erres@tutanota.de
-## TODO: Replace this IP address with your 21 address
-##       You can get your IP address by running the following command
-## python3 -c 'from two1.commands.util import zerotier; print(zerotier.get_address("21market"))'
 host: 10.244.192.155:5000
 schemes:
   - http
