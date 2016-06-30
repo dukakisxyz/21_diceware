@@ -1,5 +1,5 @@
 # 21_diceware
-<h1>Generating secure and memorable passwords for bitcoin </h1>
+<p>Generating secure and memorable passwords for bitcoin <p>
 
 <p>This service generates secure, memorable password suggestions for your apps or services, in exchange for bitcoin. </p>
 <p> To use, run: </p>
