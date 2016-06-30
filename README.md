@@ -34,4 +34,4 @@
 <li>Having a  <a href="https://21.co">21 Bitcoin Computer</a> or 21 running on AWS or MacOS <li> </ul>
 <li>Be connected to the 21 Network</li> 
 <li><Having the 21 library and its dependencies installed</li>
-
+</ul>
