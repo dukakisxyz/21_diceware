@@ -3,13 +3,13 @@
 
 <h3> Example </h3>
 <p>This service generates secure, memorable password suggestions for your apps or services, in exchange for bitcoin. </p>
-<p> To purchase a password run: </p>
+<p> To purchase a diceware password run: </p>
 
 <pre><code>21 buy url http://10.244.192.155:5000/make_password
 </code></pre>
 
-<p>You will receive a json string of 5 (default) random generated words, in the form of a dictionary.</p>
-<p align = "center"> {
+<p>Then you will receive a json string of 5 (default) random generated words, in the form of a dictionary.</p>
+<pre><code> {
     "password": [
         "alps",
         "push",
@@ -18,8 +18,20 @@
         "mc"
     ]
 }
-</p>
+</code></pre>
+
 <p> To spesify a password length, add the desirable number of words as an integer at the end of the url, for example: </p>
-<p align = "center"> "21 buy url http://10.244.192.155:5000/make_password/11" </p> 
+
+<pre><code>
+21 buy url http://10.244.192.155:5000/make_password/11 
+</code></pre>
+
 <p> Maximum password length allowed is 16 words. </p>
 
+<h3> Requirements </h3>
+
+<ul>
+<li><a href="https://21.co">Having a 21 Bitcoin Computer or 21 running on AWS or MacOS </a><li>
+<li>Be connected to the 21 Network<li>
+<li><Having the 21 library and its dependencies installed<li>
+</ul>
