@@ -1,18 +1,36 @@
-#secure & memorable passwords for everyone
-
+#application spesific imports
 import flask
+from random import randint
+from words import dictionary
 from flask import request
+import json
+
+#21 imports
 from two1.wallet import Wallet
 from two1.bitserv.flask import Payment
-import yaml
-import json
+#import yaml
 
 app = flask.Flask(__name__)
 payment = Payment(app, Wallet())
 
-dice_pass = {
+
+
+
+
+@app.route('/make_password/<length>')
+@payment.required(1000)
+def make_password(length):
+	
+	#length = int(length)
+
+	dice_pass = {
 	"password" : []
 }
+	password = ""
+	for x in range(length):
+		word = make_word()
+		dice_pass["password"].append(word)
+	return (dice_pass)
 
 def make_word():
 	word_in_numbers = ""
@@ -22,18 +40,6 @@ def make_word():
 	word_in_numbers = word_in_numbers
 	word = dictionary[word_in_numbers]
 	return (word)
-
-
-@app.route('/make_password')
-@payment.required(5000)
-def make_password():
-	length = request.args.get('text')
-	password = ""
-	for x in range(length):
-		word = make_word()
-		dice_pass["password"].append(word)
-	return (dice_pass)
-
 
 '''
 @app.route('/manifest')
