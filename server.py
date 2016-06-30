@@ -13,13 +13,16 @@ import yaml
 app = flask.Flask(__name__)
 payment = Payment(app, Wallet())
 
-
+@app.route('/make_password/')
 @app.route('/make_password/<int:length>')
 @payment.required(1000)
 def make_password(length = None):
 	length = length
-	if length > 10:
-		length = 10
+
+	if length == None:
+		length = 5
+	elif length > 16:
+		length = 16
 
 	dice_pass = {
 	"password" : []
