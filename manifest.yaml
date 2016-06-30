@@ -1,7 +1,7 @@
 info:
   title: 'Diceware password generator'
-  description: 'Generates secure, memorable passwords in exchange for bitcoin.' 
-  x-21-quick-buy: '21 buy url http://10.244.192.155:5000/make_password/<number of words in the password as an integer>'
+  description: 'Generates secure, memorable passwords in exchange for bitcoin. Read full instructions here: http://dukakis.xyz/21_diceware' 
+  x-21-quick-buy: '21 buy url http://10.244.192.155:5000/make_password/<desired number of words as an integer>'
   x-21-category: utilities
   x-21-app-image: "https://s3.amazonaws.com/usercontent.21.co/newApp.png"
   x-21-total-price:
@@ -10,7 +10,6 @@ info:
   contact:
     name: erres
     email: erres@tutanota.de
-  project URL: "http://dukakis.xyz/21_diceware/"
 host: 10.244.192.155:5000
 schemes:
   - http
