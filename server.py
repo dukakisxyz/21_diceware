@@ -14,10 +14,9 @@ app = flask.Flask(__name__)
 payment = Payment(app, Wallet())
 
 
-@app.route('/make_password/<length>')
+@app.route('/make_password/<int:length>')
 @payment.required(1000)
 def make_password(length):
-	#length = int(length)
 	dice_pass = {
 	"password" : []
 }
