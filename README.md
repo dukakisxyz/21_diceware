@@ -31,7 +31,7 @@
 <h3> Requirements </h3>
 
 <ul>
-<li><a href="https://21.co">Having a 21 Bitcoin Computer or 21 running on AWS or MacOS </a><li>
-<li>Be connected to the 21 Network<li>
-<li><Having the 21 library and its dependencies installed<li>
-</ul>
+<li>Having a  <a href="https://21.co">21 Bitcoin Computer</a> or 21 running on AWS or MacOS <li> </ul>
+<li>Be connected to the 21 Network</li> 
+<li><Having the 21 library and its dependencies installed</li>
+
