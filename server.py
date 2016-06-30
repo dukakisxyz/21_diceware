@@ -8,7 +8,7 @@ import json
 #21 imports
 from two1.wallet import Wallet
 from two1.bitserv.flask import Payment
-#import yaml
+import yaml
 
 app = flask.Flask(__name__)
 payment = Payment(app, Wallet())
@@ -16,7 +16,11 @@ payment = Payment(app, Wallet())
 
 @app.route('/make_password/<int:length>')
 @payment.required(1000)
-def make_password(length):
+def make_password(length = None):
+	length = length
+	if length > 10:
+		length = 10
+
 	dice_pass = {
 	"password" : []
 }
@@ -31,7 +35,7 @@ def make_password(length):
 		dice_pass["password"].append(word)
 	return json.dumps(dice_pass)
 
-'''
+
 @app.route('/manifest')
 def manifest():
     """Provide the app manifest to the 21 crawler.
@@ -39,7 +43,7 @@ def manifest():
     with open('./manifest.yaml', 'r') as f:
         manifest = yaml.load(f)
     return json.dumps(manifest)
-'''
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
