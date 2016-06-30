@@ -1,6 +1,3 @@
-<html>
-<body>
-
 <h1> 21_diceware </h1>
 
 <p>Generating secure and memorable passwords for bitcoin <p>
@@ -34,11 +31,7 @@
 
 <h3> Requirements </h3>
 
-<ul style="list-style-type:disc">
-<li>Having a  <a href="https://21.co">21 Bitcoin Computer</a> or 21 running on AWS or MacOS <li> 
-<li>Be connected to the 21 Network</li> 
-<li><Having the 21 library and its dependencies installed</li>
-</ul>
+1. Having a  <a href="https://21.co">21 Bitcoin Computer</a> or 21 running on AWS or MacOS
+2. Be connected to the 21 Network
+3. Having the 21 library and its dependencies installed
 
-</body>
-</html>
