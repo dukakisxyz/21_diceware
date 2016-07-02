@@ -13,7 +13,11 @@ import yaml
 app = flask.Flask(__name__)
 payment = Payment(app, Wallet())
 
-#@app.route("/")
+@app.route("/")
+def info():
+	return "To buy a password run: 21 buy url http://10.244.192.155:5000/make_password "
+
+
 @app.route('/make_password/')
 @app.route('/make_password/<int:length>')
 @payment.required(1000)
