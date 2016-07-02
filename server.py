@@ -13,7 +13,7 @@ import yaml
 app = flask.Flask(__name__)
 payment = Payment(app, Wallet())
 
-@app.route("/")
+#@app.route("/")
 @app.route('/make_password/')
 @app.route('/make_password/<int:length>')
 @payment.required(1000)
