@@ -15,7 +15,7 @@ payment = Payment(app, Wallet())
 
 @app.route("/")
 def info():
-	return "To buy a password run: 21 buy url http://10.244.192.155:5000/make_password "
+	return "To buy a password run: 21 buy url http://10.244.183.245:8000/make_password | For full documentation visit http://dukakis.xyz/21_diceware.html"
 
 
 @app.route('/make_password/')

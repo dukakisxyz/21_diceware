@@ -6,7 +6,7 @@
 <p>This service generates secure, memorable passwords for your apps or services, in exchange for bitcoin. </p>
 <p> To purchase a diceware password run: </p>
 
-<pre><code>21 buy url http://10.244.192.155:5000/make_password
+<pre><code>21 buy url http://10.244.183.245:8000/make_password
 </code></pre>
 
 <p>Then you will receive a json string of 5 (default) random generated words, in the form of a dictionary.</p>
@@ -24,7 +24,7 @@
 <p> To spesify a password length, add the desirable number of words as an integer at the end of the url, for example: </p>
 
 <pre><code>
-21 buy url http://10.244.192.155:5000/make_password/11 
+21 buy url http://10.244.183.245:8000/make_password/11
 </code></pre>
 
 <p> Maximum password length allowed is 16 words. </p>
