@@ -1,6 +1,6 @@
 <h1> 21_diceware </h1>
 
-<p>Generating secure and memorable passwords for bitcoin <p>
+<p>Generating secure and memorable passwords for bitcoin </p>
 
 <h3> Example </h3>
 <p>This service generates secure, memorable passwords for your apps or services, in exchange for bitcoin. </p>
