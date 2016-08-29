@@ -1,6 +1,6 @@
 info:
   title: 'Diceware password generator'
-  description: 'Generates secure, memorable passwords in exchange for bitcoin. Read full documentation at 10.244.183.245:8000/documentation'
+description: 'Generates secure, memorable passwords in exchange for bitcoin. For documentation see here: http://bit.ly/2c9TTb8'
   x-21-quick-buy: '21 buy http://10.244.183.245:8000/make_password/<desired number of words as an integer>'
   x-21-category: utilities
   x-21-app-image: "https://s3.amazonaws.com/usercontent.21.co/newApp.png"
