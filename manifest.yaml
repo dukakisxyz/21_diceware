@@ -1,17 +1,42 @@
-info:
-  title: 'Diceware password generator'
-description: 'Generates secure, memorable passwords in exchange for bitcoin. For documentation see here: http://bit.ly/2c9TTb8'
-  x-21-quick-buy: "21 buy 'http://[fcce:a977:ee7d:817b:3380:0000:0000:0001]:8000/make_password'"
-  x-21-category: utilities
-  x-21-app-image: "https://s3.amazonaws.com/usercontent.21.co/newApp.png"
-  x-21-total-price:
-    min: 1000
-    max: 1000
-  contact:
-    name: erres
-    email: erres@tutanota.de
-host: [fcce:a977:ee7d:817b:3380:0000:0000:0001]
-schemes:
-  - http
 basePath: /
+host: '[fcce:a977:ee7d:817b:3380:0000:0000:0001]:8000'
+info:
+contact: {email: erres@tutanota.de, name: erres}
+description: Generates secure, memorable passwords in exchange for bitcoin
+title: Diceware password generator
+x-21-app-image: https://s3.amazonaws.com/usercontent.21.co/newApp.png
+x-21-category: utilities
+x-21-keywords: [password, password generator]
+x-21-quick-buy: '$ 21 buy "http://[fcce:a977:ee7d:817b:3380:0000:0000:0001]:8000/make_password/<number
+of words as an integer>"
+
+
+#   For example: $ 21 buy "http://[fcce:a977:ee7d:817b:3380:0000:0000:0001]:8000/make_password/6"
+
+#   Output:
+
+#       {
+
+#           "password": [
+
+#           "alps",
+
+#           "push",
+
+#           "craft",
+
+#           "assam",
+
+#           "mc"
+
+#           ]
+
+#       }
+
+
+#  For documentation see here: http://bit.ly/2c9TTb8
+
+'
+x-21-total-price: {max: 7400, min: 7400}
+schemes: [http]
 x-21-manifest-path: /manifest
