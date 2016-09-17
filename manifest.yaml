@@ -1,7 +1,7 @@
 info:
   title: 'Diceware password generator'
 description: 'Generates secure, memorable passwords in exchange for bitcoin. For documentation see here: http://bit.ly/2c9TTb8'
-  x-21-quick-buy: '21 buy http://10.244.183.245:8000/make_password/<desired number of words as an integer>'
+  x-21-quick-buy: "21 buy 'http://[fcce:a977:ee7d:817b:3380:0000:0000:0001]:8000/make_password'"
   x-21-category: utilities
   x-21-app-image: "https://s3.amazonaws.com/usercontent.21.co/newApp.png"
   x-21-total-price:
@@ -10,7 +10,7 @@ description: 'Generates secure, memorable passwords in exchange for bitcoin. For
   contact:
     name: erres
     email: erres@tutanota.de
-host: 10.244.183.245:8000
+host: [fcce:a977:ee7d:817b:3380:0000:0000:0001]
 schemes:
   - http
 basePath: /
